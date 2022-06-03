@@ -1,8 +1,3 @@
 # TestReactTS
 
-Created with CodeSandbox
-
-Gonzalo Mansilla - Front End
-
-Test for Jobs Partake
-Posts App
+Test skills for Jobs Partake Posts App, created with CodeSandbox and React with Typescript

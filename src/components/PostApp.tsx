@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import PostList from "../components/PostList";
+import PostTable from "../components/PostTable";
 import PostForm from "./PostForm";
+import "./PostAppStyles.css";
 
 export default function PostApp() {
   const [posts, setPosts] = useState([]);
@@ -39,21 +40,25 @@ export default function PostApp() {
 
   return (
     <div>
-      <h1>Post App Test</h1>
-      <h2>Gonzalo Mansilla</h2>
-      <br></br>
+      <div className="titles">
+        <h1 className="title1">Post App Test</h1>
+        <h4 className="title2">Gonzalo Mansilla</h4>
+      </div>
       <PostForm createData={createData} />
       <div>
-        {posts.map((post) => (
-          <PostList
-            key={post.id}
-            id={posts.id}
-            title={post.title}
-            body={post.body}
-            deleteData={deleteData}
-          />
-        ))}
+        <PostTable data={posts} deleteData={deleteData} />
       </div>
+      <footer className="footer">
+        <h3>Gonzalo Mansilla</h3>
+        <h4>Front End Developer</h4>
+        <span className="mailLink">gonzalo.mansill@gmail.com</span>
+        <a
+          className="linkdInLink"
+          href="https://www.linkedin.com/in/gonzalomansillafrontend/"
+        >
+          LinkdIn
+        </a>
+      </footer>
     </div>
   );
 }

@@ -1,4 +1,11 @@
 .App {
-  font-family: sans-serif;
+  display: flex;
+  width: 100%;
+  background-color: rgb(220, 220, 233);
+  font-family: montserrat;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }

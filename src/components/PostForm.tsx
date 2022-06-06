@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./PostFormStyles.css";
 
 const initialForm = {
   id: null,
@@ -6,7 +7,7 @@ const initialForm = {
   body: ""
 };
 
-export default function PostForm({ createData }) {
+export default function PostForm({ createData, dataToEdit, setDataToEdit }) {
   const [form, setForm] = useState({ initialForm });
 
   const handleChange = (e) => {
@@ -35,24 +36,33 @@ export default function PostForm({ createData }) {
   };
 
   return (
-    <div>
-      <h3>{"Añadir Usuario"}</h3>
+    <div className="form">
+      <h2 className="title">Create New Post</h2>
       <form onSubmit={handleSubmit}>
         <input
+          className="inputTitle"
           type="text"
           name="title"
-          placeholder="Title"
+          placeholder="Title:"
           onChange={handleChange}
           value={form.title}
         ></input>
         <textarea
+          className="textArea"
           name="body"
-          placeholder="Body"
+          placeholder="Body:"
           onChange={handleChange}
           value={form.body}
         ></textarea>
-        <input type="submit" value="Send"></input>
-        <input type="reset" value="Clear" onClick={handleReset}></input>
+        <div className="buttons">
+          <input type="submit" value="Send" className="buttonSend"></input>
+          <input
+            type="reset"
+            value="Clear"
+            onClick={handleReset}
+            className="buttonClear"
+          ></input>
+        </div>
       </form>
       <br></br>
     </div>

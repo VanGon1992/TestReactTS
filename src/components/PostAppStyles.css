@@ -1,0 +1,42 @@
+.titles {
+  background-color: rgb(36, 34, 49);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title1 {
+  color: white;
+  margin-bottom: 0.8rem;
+}
+.title2 {
+  color: white;
+  margin: 0;
+}
+.postList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(36, 34, 49);
+  height: 15rem;
+  padding: 2rem;
+  color: white;
+}
+.mailLink {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.linkdInLink {
+  color: lightblue;
+  text-decoration: none;
+  cursor: pointer;
+}

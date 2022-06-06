@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.title {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.inputTitle {
+  font-family: montserrat;
+  width: 70%;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  padding: 0.8rem;
+}
+.textArea {
+  font-family: montserrat;
+  width: 70%;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  padding: 0.8rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+.buttons {
+  margin: 2rem;
+}
+.buttonSend {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.7rem;
+  width: 10rem;
+  background-color: rgb(141, 147, 241);
+  cursor: pointer;
+}
+.buttonClear {
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.7rem;
+  width: 10rem;
+  background-color: rgb(255, 202, 103);
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .buttonSend {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.7rem;
+    width: 10rem;
+    background-color: rgb(141, 147, 241);
+    cursor: pointer;
+  }
+}

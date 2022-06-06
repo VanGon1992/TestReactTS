@@ -1,0 +1,33 @@
+.postContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(240, 236, 250);
+}
+.postContentTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.postTitle {
+  margin-bottom: 0.5rem;
+}
+.postBody {
+  margin-bottom: 0.5rem;
+}
+.postButton {
+  font-weight: 600;
+  text-align: center;
+  width: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
+}
